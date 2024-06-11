@@ -1,0 +1,269 @@
+/* Header.css */
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 5px;
+     }
+
+.header1 {
+  background-image: url('https://i.pinimg.com/originals/92/52/b7/9252b7cc30bf22105649549cfc6ad0e4.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 50px;
+}
+  
+.header h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.header .pro {
+  color: #ff4d4d; 
+}
+
+/* Section.css */
+.section {
+  display: flex;
+  align-items: center;
+  margin-left: auto; 
+  padding-left: 5px;
+  width: 40%;
+  box-sizing: border-box;
+  color: white;
+  text-align: center; 
+  padding-right: 50px;
+  font-size: 17px;
+  margin-bottom: 70px;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.content h2 {
+  margin: 0;
+}
+
+  
+  /* App.css */
+  .App {
+    font-family: Arial, sans-serif;
+    color: white;  
+  }
+  
+  .sections {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    text-align: center;
+    background-image: url('https://4kwallpapers.com/images/wallpapers/windows-11-purple-abstract-dark-background-dark-purple-dark-3440x1440-8995.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .header {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .subheader {
+    font-size: 2rem;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    /* -webkit-background-clip: text; */
+    color: transparent;
+  }
+  
+  .description {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+  
+  .clients {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: #8e2de2;
+  }
+  
+  .contact-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #8e2de2;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-button:hover {
+    background-color: #4a00e0;
+  }
+  
+ 
+  
+
+
+
+  .footer {
+    background-color: black;
+    padding: 70px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .containerFooter {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Расстояние между иконками */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social__item {
+    margin: 0 10px;
+  }
+  
+  .social__item a img {
+    width: 30px; 
+    height: 24px;
+    display: inline-block;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+  }
+  
+  
+
+
+
+
+ /* App.css */
+.App {
+  transition: background-color 0.5s, color 0.5s;
+  position: relative;
+}
+
+.App#light .container {
+  background-color: white;
+  color: black;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/007/852/288/original/stylish-abstract-twisted-wave-backdrops-curved-wavy-shape-design-texture-in-holographic-gradient-color-vector.jpg'); /* Путь к изображению для светлой темы */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.App#dark {
+  background-color: black;
+  color: white; 
+  background-size: cover;
+  background-position: center;
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  background: rgba(255, 255, 255, 0.7); 
+  padding: 10px;
+  border-radius: 24px;
+}
+
+.change-text {
+  margin-right: 10px;
+  color: #000;
+}
+
+#toggle-btn {
+  display: none;
+}
+
+.toggle-label {
+  width: 50px;
+  height: 24px;
+  background: grey;
+  display: inline-block;
+  position: relative;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.toggle-label::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+
+#toggle-btn:checked + .toggle-label::after {
+  left: 28px;
+}
+
+#toggle-btn:checked + .toggle-label {
+  background: #8e2de2;
+}
+
+
+
+
+
+
+.slider-container {
+  width: 800px; /* Ширина контейнера для слайдера */
+  height: 400px; /* Высота контейнера для слайдера */
+  overflow: hidden; /* Обрезаем содержимое, чтобы скрыть изображения за пределами контейнера */
+  position: absolute; /* Абсолютное позиционирование для центрирования */
+  margin-left: 560px;
+  margin-top: 200px;
+  padding-bottom: 100px;
+}
+
+.slider-image {
+  width: 100%; /* Ширина изображения равна ширине контейнера */
+  height: 100%; /* Высота изображения равна высоте контейнера */
+  transition: opacity 0.5s ease; /* Плавный переход между слайдами по изменению прозрачности */
+  opacity: 1; /* Устанавливаем начальную прозрачность */
+}
+
+.slider-image:not(:first-child) {
+  opacity: 0; /* Скрываем все слайды, кроме первого */
+}
